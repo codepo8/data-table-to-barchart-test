@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding :0;
+	}
+nav,output {
+	display: block;
+	}
+body {
+	padding: 2em;
+	font-family: "Open Sans", arial, sans-serif;
+	}
+h1 {
+	text-transform: uppercase;
+	font-size: 20px;
+	}
+h1 span {
+	display: block;
+	color: #999;
+	font-size: 12px;
+	}	
+nav {
+	float:left;
+	padding-right:20px;
+	}
+button {
+	padding: 5px 10px;
+	font-size: 14px;
+	width: 9em;
+	border: none;
+	margin-bottom: 5px;
+	background: #ccc;
+	background: -webkit-linear-gradient(#ccc, #eee);
+	background: -moz-linear-gradient(#ccc, #eee);
+	background: -ms-linear-gradient(#ccc, #eee);
+	background: -o-linear-gradient(#ccc, #eee);
+	background: linear-gradient(#ccc, #eee);
+	}
+button.current {
+	background: #6cf;
+	background: -webkit-linear-gradient(#369, #6cf);
+	background: -moz-linear-gradient(#369, #6cf);
+	background: -ms-linear-gradient(#369, #6cf);
+	background: -o-linear-gradient(#369, #6cf);
+	background: linear-gradient(#369, #6cf);
+	}
+.resultbars {
+	padding-top: 30px;
+	}
+.progress {
+	float: left;
+	width: 236px;
+	height: 1em;
+	border: 1px solid #ccc;
+	background: -webkit-linear-gradient(#ccc, #eee);
+	background: -moz-linear-gradient(#ccc, #eee);
+	background: -ms-linear-gradient(#ccc, #eee);
+	background: -o-linear-gradient(#ccc, #eee);
+	background: linear-gradient(#ccc, #eee);
+}
+meter, progress {
+	width: 236px;
+}
+.resultbars li {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 5px 0;
+	}
+.value {
+	padding: 0 1em;
+}
+#graphs ul { 
+	margin: 1em 0;
+	list-style: none;
+	}
+.os {
+	display: block;
+	float: left;
+	width: 100px;
+}
+.progress span {
+	background: #060;
+	background: -webkit-linear-gradient(0deg, #060, #0c0);
+	background: -moz-linear-gradient(0deg, #060, #0c0);
+	background: -ms-linear-gradient(0deg, #060, #0c0);
+	background: -o-linear-gradient(0deg, #060, #0c0);
+	background: linear-gradient(90deg, #060, #0c0);
+	width:20px;
+	height:1em;
+	display: block;
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-ms-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+	}
+table { 
+	clear: both;
+	border: none;
+	border-collapse: collapse;
+}
+thead th {
+	border-bottom: 2px solid #000;
+}
+th, td {
+	padding: 5px 10px;
+	border: none;
+	border-collapse: collapse;
+}
+tbody td{
+	text-align: center;
+}
+tbody tr > th {
+	text-align: left;
+	border-right: 2px solid #000;
+}
