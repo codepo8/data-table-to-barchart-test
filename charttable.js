@@ -1,5 +1,7 @@
 (function(){
-
+if (document.location.href.indexOf('nojs') !== -1) {
+	return;
+}
 // DOM parts
 var table = document.querySelector('#datatable'),
 		graphs = document.querySelector('#graphs');
