@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Data-table-to-barchart-test : A quick example on how to progressively enhance a data table to become an interactive barchart" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Data-table-to-barchart-test</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/codepo8/data-table-to-barchart-test">View on GitHub</a>
+
+          <h1 id="project_title">Data-table-to-barchart-test</h1>
+          <h2 id="project_tagline">A quick example on how to progressively enhance a data table to become an interactive barchart</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/codepo8/data-table-to-barchart-test/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/codepo8/data-table-to-barchart-test/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>&lt;!DOCTYPE HTML&gt;
+
+</p>
+    Animated barchart from datatable example
+    * {
+        margin: 0;
+        padding :0;
+        }
+    nav,output {
+        display: block;
+        }
+    body {
+        padding: 2em;
+        font-family: &amp;quot;Open Sans&amp;quot;, arial, sans-serif;
+        }
+    h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        }
+    h1 span {
+        display: block;
+        color: #999;
+        font-size: 12px;
+        }&lt;br&gt;
+    nav {
+        float:left;
+        padding-right:20px;
+        }
+    button {
+        padding: 5px 10px;
+        font-size: 14px;
+        width: 9em;
+        border: none;
+        margin-bottom: 5px;
+        background: #ccc;
+        background: -webkit-linear-gradient(#ccc, #eee);
+        background: -moz-linear-gradient(#ccc, #eee);
+        background: -ms-linear-gradient(#ccc, #eee);
+        background: -o-linear-gradient(#ccc, #eee);
+        background: linear-gradient(#ccc, #eee);
+        }
+    button.current {
+        background: #6cf;
+        background: -webkit-linear-gradient(#369, #6cf);
+        background: -moz-linear-gradient(#369, #6cf);
+        background: -ms-linear-gradient(#369, #6cf);
+        background: -o-linear-gradient(#369, #6cf);
+        background: linear-gradient(#369, #6cf);
+        }
+    .resultbars {
+        padding-top: 30px;
+        }
+    .progress {
+        float: left;
+        width: 236px;
+        height: 1em;
+        border: 1px solid #ccc;
+        background: -webkit-linear-gradient(#ccc, #eee);
+        background: -moz-linear-gradient(#ccc, #eee);
+        background: -ms-linear-gradient(#ccc, #eee);
+        background: -o-linear-gradient(#ccc, #eee);
+        background: linear-gradient(#ccc, #eee);
+    }
+    meter, progress {
+        width: 236px;
+    }
+    .resultbars li {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 5px 0;
+    }
+    .value {
+        padding: 0 1em;
+    }
+    #graphs ul { 
+        margin: 1em 0;
+        list-style: none;
+        }
+    .os {
+        display: block;
+        float: left;
+        width: 100px;
+    }
+    .progress span {
+        background: #060;
+        background: -webkit-linear-gradient(0deg, #060, #0c0);
+        background: -moz-linear-gradient(0deg, #060, #0c0);
+        background: -ms-linear-gradient(0deg, #060, #0c0);
+        background: -o-linear-gradient(0deg, #060, #0c0);
+        background: linear-gradient(90deg, #060, #0c0);
+        width:20px;
+        height:1em;
+        display: block;
+        -webkit-transition: width 1s;
+        -moz-transition: width 1s;
+        -ms-transition: width 1s;
+        -o-transition: width 1s;
+        transition: width 1s;
+        }
+    table { 
+        clear: both;
+        border: none;
+        border-collapse: collapse;
+    }
+    thead th {
+        border-bottom: 2px solid #000;
+    }
+    th, td {
+        padding: 5px 10px;
+        border: none;
+        border-collapse: collapse;
+    }
+    tbody td{
+        text-align: center;
+    }
+    tbody tr &amp;gt; th {
+        text-align: left;
+        border-right: 2px solid #000;
+    }
+    <h1>
+    What platforms are you targeting with your apps? 
+    Answers from 590 developers
+</h1>
+
+ 
+
+<table summary="Platforms targetted by developers. Winners are the web, iOS and Android in that order">
+<tr>
+<th>Platform</th>
+        <th>Focus</th>
+        <th>Must have</th>
+        <th>Supported</th>
+        <th>Sometimes</th>
+        <th>Not at all</th>
+    </tr>
+<tr>
+<th>Web</th>
+<td>370</td>
+<td>153</td>
+<td>33</td>
+<td>23</td>
+<td>11</td>
+    </tr>
+<tr>
+<th>iOS</th>
+<td>261</td>
+<td>207</td>
+<td>53</td>
+<td>28</td>
+<td>41</td>
+    </tr>
+<tr>
+<th>Android</th>
+<td>182</td>
+<td>221</td>
+<td>102</td>
+<td>47</td>
+<td>38</td>
+    </tr>
+<tr>
+<th>Windows</th>
+<td>10</td>
+<td>46</td>
+<td>131</td>
+<td>173</td>
+<td>230</td>
+    </tr>
+<tr>
+<th>Blackberry</th>
+<td>8</td>
+<td>15</td>
+<td>100</td>
+<td>164</td>
+<td>303</td>
+    </tr>
+</table>
+(function(){
+
+// DOM parts
+var table = document.querySelector('#datatable'),
+        graphs = document.querySelector('#graphs');
+        weights = table.querySelectorAll('#datatable thead th'),
+        rows = table.querySelectorAll('tbody tr');
+// collections 
+var cells = null, bars = null, fields = null;
+// caches
+var oldbutton = null, osname = '', i = 0, out = 0;
+// Brent Spiner
+var dataset = {};
+// max amount for bars and scale for data display
+var all = 590, scale = 1;
+
+// type of chart 
+var type = 'barcharts';
+
+// let the browser decide what works 
+if (document.location.href.indexOf('checksupport') !== -1) {
+    if (document.createElement('meter').max !== undefined) {
+        type = 'meter';
+    } else {
+        if (document.createElement('progress').max !== undefined) {
+            type = 'progress';
+        } else {
+            type = 'barchars';
+        }
+    }
+}
+
+var markup = {
+    'barcharts': '&lt;li&gt;&lt;span class="os"&gt;{os}&lt;/span&gt; '+
+                             '&lt;div class="progress"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;'+
+                             ' &lt;span class="value"&gt;0&lt;/span&gt;&lt;/li&gt;',
+    'meter':         '&lt;li&gt;&lt;span class="os"&gt;{os}&lt;/span&gt; '+
+                         '&lt;meter min="0" max="' + all + '" value="30"&gt;&lt;/meter&gt;'+
+                         ' &lt;span class="value"&gt;0&lt;/span&gt;&lt;/li&gt;',
+    'progress':  '&lt;li&gt;&lt;span class="os"&gt;{os}&lt;/span&gt; '+
+                             '&lt;progress min="0" max="' + all + '" value="30"&gt;&lt;/progress&gt;'+
+                             ' &lt;span class="value"&gt;0&lt;/span&gt;&lt;/li&gt;'           
+};
+
+// turn the data table into a massive data hash 
+i = rows.length;
+while (i--) {
+    cells = rows[i].querySelectorAll('td');
+    osname = rows[i].querySelector('th')
+    j = cells.length;
+    dataset[osname.innerHTML] = {};
+    while (j--) {
+        dataset[osname.innerHTML][weights[j+1].innerHTML] = +cells[j].innerHTML;
+    }
+}
+
+// create the navigation from the table headers
+out = '&lt;nav&gt;&lt;ul&gt;';
+for (i = 1; i &lt; weights.length; i++) {
+    out += '&lt;li&gt;&lt;button&gt;' + weights[i].innerHTML + '&lt;/button&gt;&lt;/li&gt;';
+}
+out += '&lt;/ul&gt;&lt;/nav&gt;';
+graphs.innerHTML += out;
+
+// create the barcharts 
+out = '&lt;ul class="resultbars"&gt;';
+for (i in dataset) {
+    out += markup[type].replace('{os}',i);
+}
+out += '&lt;/ul&gt;&lt;/nav&gt;';
+graphs.innerHTML += out;
+
+// cache the output elements 
+if (type === 'barcharts') { bars = '.resultbars .progress span'; }
+if (type === 'meter')     { bars = '.resultbars meter'; }
+if (type === 'progress')  { bars = '.resultbars progress'; }
+bars = document.querySelectorAll(bars);
+fields = document.querySelectorAll('.resultbars .value');
+
+// getting the scale factor for the bars (not needed for meter/progress)
+if (type === 'barcharts') {
+    scale = all / document.querySelector('.progress').offsetWidth;
+}
+
+// One event delegation to rule them all
+document.querySelector('#graphs nav').addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'BUTTON') {
+        if (oldbutton) {
+            oldbutton.className = '';
+        }
+        ev.target.className = 'current';
+        oldbutton = ev.target;
+        var elm = ev.target.innerHTML;
+        out = 0;        
+        for(i in dataset) {
+            fields[out].innerHTML = dataset[i][elm];
+            if (type === 'barcharts') {
+                bars[out].style.width = dataset[i][elm]/scale + 'px';
+            }
+            if (type === 'meter' || type === 'progress') {
+                bars[out].value  = dataset[i][elm];
+            }
+            out++;
+        }
+    }
+}, false);
+// start the show
+document.querySelector('#graphs button').click();
+})();
+<p>
+</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Data-table-to-barchart-test maintained by <a href="https://github.com/codepo8">codepo8</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
