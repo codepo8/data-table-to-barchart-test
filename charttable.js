@@ -4,7 +4,7 @@ if (document.location.href.indexOf('nojs') !== -1) {
 }
 // DOM parts
 var table = document.querySelector('#datatable'),
-		graphs = document.querySelector('#graphs');
+		graphs = document.querySelector('#graphs'),
 		weights = table.querySelectorAll('#datatable thead th'),
 		rows = table.querySelectorAll('tbody tr');
 // collections 
@@ -14,7 +14,7 @@ var oldbutton = null, osname = '', i = 0, out = 0;
 // Brent Spiner
 var dataset = {};
 // max amount for bars and scale for data display
-var all = 590, scale = 1;
+var all = +table.getAttribute('data-max') || 590, scale = 1;
 
 // type of chart 
 var type = 'barcharts';
